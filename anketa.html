@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PYB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="skripte/validacijaAnketa.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Leckerli+One">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="pozadinaAnketa">
+	<!-- HEADER -->
+	<nav class="navbar transparent navbar-inverse navbar-static-top">
+		<div class="container-fluid">
+	    	<div class="navbar-header">
+	    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>                        
+	      		</button>
+	    	</div>
+	    	<div class="collapse navbar-collapse" id="myNavbar">
+	     		<ul class="nav navbar-nav navbar-right">
+	     		    <li><a href="index.html">POČETNA</a></li>
+		    	    <li><a href="destinacije.html">DESTINACIJE</a></li>
+		    	    <li><a href="statistika.html">STATISTIKA</a></li>
+		    	    <li><a href="kontakt.html">KONTAKT</a></li>
+	    		</ul>
+	    	</div>
+	  	</div>
+	</nav>	
+    <br><br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2">
+			</div>
+			
+			<div class="col-sm-8" style="text-align: center;">
+			<h2> Zanima nas vaše mišljenje! </h2>
+			<h4>Izdvojite pet minuta vašeg vremena i popunite našu anketu, kako bi vam mogli ponuditi najbolje mjesto za putovanje.</h4>
+			</div>
+
+			<div class="col-sm-2">	
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="container-fluid" id="anketaContainer">	
+    <form class="pitanja">
+        <fieldset> 
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-6">
+                        <div class="pitanje"> 1. <strong> Spol </strong>: <br>
+                            <input type="radio" name="spol" value="musko" id="spol1"> Muško <br>
+                            <input type="radio" name="spol" value="zensko" id="spol2"> Žensko
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="pitanje" id="p2"> 2. <strong> Godine: </strong> <br>
+                            <input type="radio" name="godine" value="prvi" id="god1"> 18-25 <br>
+                            <input type="radio" name="godine" value="drugi" id="god2"> 26-35 <br>
+                            <input type="radio" name="godine" value="treci" id="god3"> 36-45 <br>
+                            <input type="radio" name="godine" value="cetvrti" id="god4"> 46+ <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="pitanje"> 3. <strong> Koliko često putujete? </strong> <br>
+                        <input type="radio" name="putovanje" value="sedmica" id="put1"> Jednom sedmično <br>
+                        <input type="radio" name="putovanje" value="mjesec" id="put2"> Jednom mjesečno <br>
+                        <input type="radio" name="putovanje" value="mjesec" id="put3"> Više puta u mjesecu <br>
+                        <input type="radio" name="putovanje" value="godina" id="put4"> Jednom godišnje <br>
+                        <input type="radio" name="putovanje" value="godina" id="put5"> Više puta u godini <br>
+                        <input type="radio" name="putovanje" value="nikako" id="put6"> Ne putujem nikako <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="pitanje"> 4. <strong> Koji su vaši motivi odlaska na putovanje? </strong> <br>
+                        <input type="radio" name="motivi" value="odmor" id="mot1"> Odmor, zabava, rekreacija <br>
+                        <input type="radio" name="motivi" value="kultura" id="mot2"> Upoznavanje drugih destinacija, običaja, kultura <br>
+                        <input type="radio" name="motivi" value="posao" id="mot3"> Poslovna putovanja<br>
+                        <input type="radio" name="motivi" value="promjena" id="mot4"> Radi promjene boravka <br>
+                        <input type="radio" name="motivi" value="nikako" id="mot5"> Ne putujem nikako <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="pitanje"> 5. <strong> Kako organizirate svoja putovanja? </strong> <br>
+                        <input type="radio" name="organizacija" value="individualno" id="kako1"> Individualno (bez agencije) <br>
+                        <input type="radio" name="organizacija" value="kombinirano" id="kako2"> Kombinirano (dio organiziram samostalno, a dio preko agencije) <br>
+                        <input type="radio" name="organizacija" value="agencija1" id="kako3"> Putem agencije, ali putujem sam/sama ili u grupi sa prijateljima<br>
+                        <input type="radio" name="organizacija" value="agencija2" id="kako4"> Putem agencije, i putujem s većom grupom ljudi <br>
+                        <input type="radio" name="organizacija" value="nikako" id="kako5"> Ne putujem nikako <br>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="pitanje"> 6. <strong> Koji oblik putovanja vas najviše privlači? </strong>  <br>
+                        <form action="">
+                            <input type="checkbox" name="oblik" value="skijanje" id="oblik1">Skijanje<br>
+                            <input type="checkbox" name="oblik" value="more" id="oblik2">Ljetovanje na moru <br>
+                            <input type="checkbox" name="oblik" value="gastro" id="oblik3">Gastronomska putovanja<br>
+                            <input type="checkbox" name="oblik" value="gradovi" id="oblik4">Posjet velikim gradovima<br>
+                            <input type="checkbox" name="oblik" value="shoping" id="oblik5">Šoping putovanja<br>
+                            <input type="checkbox" name="oblik" value="eko" id="oblik6">Ekoturizam <br>
+                            <input type="checkbox" name="oblik" value="planina" id="oblik7">Planinarenje<br>
+                            <input type="checkbox" name="oblik" value="brod" id="oblik8">Krstarenja brodom <br>
+                            <input type="checkbox" name="oblik" value="kulturni" id="oblik9">Kulturni turizam (muzeji i koncerti) <br>
+                        </form>
+                    </div>
+
+                </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="pitanje"> 
+                        7. <strong> Opišite ukratko vaše putovanje iz snova: </strong> <br>
+                        <textarea class="inputPolje" rows="4" cols="30">
+                        </textarea>
+                    </div>
+
+                    <div class="pitanje"> 
+                        8. <strong> Koja je po vama najopasnija zemlja za putovanje? </strong> <br>
+                        <input class="inputPolje" type="text" name="putovanje" required="">
+                    </div>
+
+                    <div class="pitanje"> 
+                        9. <strong> Koja je po vama najsigurnija zemlja za putovanje? </strong>  <br>
+                        <input class="inputPolje" type="text" name="putovanje" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="dugmici row text-center">
+                <button type="submit" class="btn btn-primary" onclick="validacija()">Potvrdi</button>
+                <button type="button" class="btn btn-primary" onclick="location.href ='statistika.html'">Rezultati ankete</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+    <br><br><br>
+
+	<div class="container-fluid" id="footer">
+		<div class="smIkonice">
+			<a href="https://www.instagram.com">
+				<img src="slike/instagramIkonica.png" id="i-ikonica" onmouseover="document.getElementById('i-ikonica').src='slike/instagramIkonicaHover.png';" onmouseleave="document.getElementById('i-ikonica').src='slike/instagramIkonica.png';">
+			</a>
+			<a href="https://www.outlook.com">
+				<img src="slike/eMailIkonica.png" id="e-ikonica" onmouseover="document.getElementById('e-ikonica').src='slike/eMailIkonicaHover.png';" onmouseleave="document.getElementById('e-ikonica').src='slike/eMailIkonica.png';">
+			</a>
+			<a href="https://www.twitter.com">
+				<img src="slike/twitterIkonica.png" id="t-ikonica" onmouseover="document.getElementById('t-ikonica').src='slike/twitterIkonicaHover.png';" onmouseleave="document.getElementById('t-ikonica').src='slike/twitterIkonica.png';">
+			</a>
+			<a href="https://www.facebook.com">
+				<img src="slike/facebookIkonica.png" id="f-ikonica" onmouseover="document.getElementById('f-ikonica').src='slike/facebookIkonicaHover.png';" onmouseleave="document.getElementById('f-ikonica').src='slike/facebookIkonica.png';">
+			</a>
+			<p>© Copyright 2016 PackYourBags</p>
+		</div>
+	</div>
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-88988921-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+</body>
+</html>

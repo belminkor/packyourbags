@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PYB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Leckerli+One">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="skripte/index.js"></script>
+</head>
+<body>
+	<script src="skripte/pahulje.js"></script>
+	<div id="snowflakeContainer">
+    <p class="snowflake">*</p>
+	</div>
+	<!-- HEADER -->
+	<nav class="navbar transparent navbar-inverse navbar-static-top fixed"  id="navigacija">
+		<div class="container-fluid">
+	    	<div class="navbar-header">
+	    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigacija1">
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>                        
+	      		</button>
+	    	</div>
+	    	<div class="collapse navbar-collapse" id="navigacija1">
+	     		<ul class="nav navbar-nav navbar-right">
+		    	    <li><a href="destinacije.html">DESTINACIJE</a></li>
+		    	    <li><a href="anketa.html">ANKETA</a></li>
+		    	    <li><a href="statistika.html">STATISTIKA</a></li>
+		    	    <li><a href="kontakt.html">KONTAKT</a></li>
+	    		</ul>
+	    	</div>
+	  	</div>
+	</nav>
+	<!-- VIDEO ILI SLIDESHOW -->
+	<div class="container-fluid" id="jumbo">
+		<div class="col-md-3 col-sm-3 col-xs-12" id="margina"></div>
+		<div class="col-md-6 col-sm-6 col-xs-12 text-center" id=logo>
+			<img src="slike/PYB-mali-bijeli.png" class="img-responsive margin" id="mali-bijeli">
+			<h1 id="naslov">PackYourBags</h1>
+			<h2 id="podnaslovVeliki">mjesto gdje pocinje savrsen odmor</h2>
+		</div>
+		<div class="col-md-3 col-sm-3 col-xs-12" id="margina"></div>
+	</div>
+
+	<div class="container-fluid" id="ZastoPYB">
+			<h2>Zašto odabrati PackYourBags?</h2>
+			<div class="col-md-4 col-sm-6 col-xs-6 text-center ZastoPYBIkonica"> 
+				<span id="gly1" class="glyphicon glyphicon-globe"></span>
+      			<h3>Lokacija</h3>
+      			<p>Izaberite željenu lokaciju</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 text-center ZastoPYBIkonica"> 
+				<span id="gly1" class="glyphicon glyphicon-plane"></span>
+      			<h3>Prevoz</h3>
+      			<p>Izaberite željeni prevoz</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 text-center ZastoPYBIkonica"> 
+				<span id="gly1" class="glyphicon glyphicon-calendar"></span>
+      			<h3>Datum</h3>
+      			<p>Izaberite datum koji vam odgovara</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 text-center ZastoPYBIkonica"> 
+				<span id="gly1" class="glyphicon glyphicon-time"></span>
+      			<h3>Brzina i efikasnost</h3>
+      			<p>Naši agenti će sve završiti za vas</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 text-center ZastoPYBIkonica"> 
+				<span id="gly1" class="glyphicon glyphicon-sunglasses"></span>
+      			<h3>Spremni ste za put</h3>
+      			<p>Uživajte u svom putovanju iz snova</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 text-center ZastoPYBIkonica"> 
+				<span id="gly1" class="glyphicon glyphicon-certificate"></span>
+      			<h3>Iskustvo i povjerenje</h3>
+      			<p>Na stotine zadovoljnih korisnika</p>
+			</div>
+	</div>
+
+	<!-- GDJE ZELITE ICI I 4 IKONICE -->
+	<div class="container-fluid" id="ikonice">
+		<div class="col-md-12 col-sm-12 text-center"><h2>Gdje želite ići?<hr id="linija"></h2></div>
+		<div class="col-md-3 col-sm-6 col-xs-12 text-center gdjeZeliteIciIkonica" id="jadranskoMore">
+				<img src="slike/jadranskoMore.png" id="jm-slika" onmouseover="document.getElementById('jm-slika').src='slike/jadranskoMoreHover.png';" onmouseleave="document.getElementById('jm-slika').src='slike/jadranskoMore.png';" onclick="otvoriModal('JMmodal')">
+				<h3>Jadransko More</h3>
+				<p class="podnaslov">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. </p>
+			
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 text-center gdjeZeliteIciIkonica" id="evropskePrijestolnice">
+			<img src="slike/evropskePrijestolnice.png" id="ep-slika" onmouseover="document.getElementById('ep-slika').src='slike/evropskePrijestolniceHover.png';" onmouseleave="document.getElementById('ep-slika').src='slike/evropskePrijestolnice.png';" onclick="otvoriModal('EPmodal')">
+			<h3>Evropske Prijestolnice</h3>
+			<p class="podnaslov">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. </p>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 text-center gdjeZeliteIciIkonica" id="egzoticneLokacije">
+			<img src="slike/egzoticneLokacije.png" id="el-slika" onmouseover="document.getElementById('el-slika').src='slike/egzoticneLokacijeHover.png';" onmouseleave="document.getElementById('el-slika').src='slike/egzoticneLokacije.png';" onclick="otvoriModal('ELmodal')">
+			<h3>Egzotične lokacije</h3>
+			<p class="podnaslov">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. </p>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 text-center gdjeZeliteIciIkonica" id="netaknutaPriroda">
+			<img src="slike/netaknutaPriroda.png" id="np-slika" onmouseover="document.getElementById('np-slika').src='slike/netaknutaPrirodaHover.png';" onmouseleave="document.getElementById('np-slika').src='slike/netaknutaPriroda.png';" onclick="otvoriModal('NPmodal')">
+			<h3>Netaknuta Priroda</h3>
+			<p class="podnaslov">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. </p>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" id="kartice">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12 text-center" id="karticaAnketa"> 
+				<div class="kartica">
+					<img src="slike/slikaAnketa.jpg" class="img-responsive margin">
+					<h3>Anketa</h3>
+					<p class="karticaTekst">Izdvojite par minuta vašeg vremena i popunite našu anketu kako bi vam mogli ponuditi najbolje mjesto za vas. </p>
+					<button type="button" class="btn btn-primary" id="dugme1" onclick="location.href = 'anketa.html' ">Detaljnije</button>
+
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-4 col-xs-12 text-center" id="karticaStatistika"> 
+				<div class="kartica">
+					<img src="slike/slikaStatistika.jpg" class="img-responsive margin">
+					<h3>Statistika</h3>
+					<p class="karticaTekst">Pogledajte broj naših zadovoljnih klijenata, statistiku i uspjeh koji je ostvarila naša agencija prošle godine</p>
+					<button type="button" class="btn btn-primary" id="dugme2" onclick="location.href = 'statistika.html' ">Detaljnije</button>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 col-xs-12 text-center" id="karticaKontakt"> 
+				<div class="kartica">
+					<img src="slike/slikaKontakt.jpg" class="img-responsive margin">
+					<h3>Kontakt</h3>
+					<p class="karticaTekst">Imate nekih pitanja ili nejasnoća? Kontaktirajte jednog od naših agenata koji su tu za vas 24h na dan. </p>
+					<button type="button" class="btn btn-primary" id="dugme3" onclick="location.href = 'kontakt.html' ">Detaljnije</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" id="footer">
+		<div class="smIkonice">
+			<a href="https://www.instagram.com">
+				<img src="slike/instagramIkonica.png" id="i-ikonica" onmouseover="document.getElementById('i-ikonica').src='slike/instagramIkonicaHover.png';" onmouseleave="document.getElementById('i-ikonica').src='slike/instagramIkonica.png';">
+			</a>
+			<a href="https://www.outlook.com">
+				<img src="slike/eMailIkonica.png" id="e-ikonica" onmouseover="document.getElementById('e-ikonica').src='slike/eMailIkonicaHover.png';" onmouseleave="document.getElementById('e-ikonica').src='slike/eMailIkonica.png';">
+			</a>
+			<a href="https://www.twitter.com">
+				<img src="slike/twitterIkonica.png" id="t-ikonica" onmouseover="document.getElementById('t-ikonica').src='slike/twitterIkonicaHover.png';" onmouseleave="document.getElementById('t-ikonica').src='slike/twitterIkonica.png';">
+			</a>
+			<a href="https://www.facebook.com">
+				<img src="slike/facebookIkonica.png" id="f-ikonica" onmouseover="document.getElementById('f-ikonica').src='slike/facebookIkonicaHover.png';" onmouseleave="document.getElementById('f-ikonica').src='slike/facebookIkonica.png';">
+			</a>
+			<p>© Copyright 2016 PackYourBags</p>
+		</div>
+	</div>
+
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-88988921-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+	
+	<div id="JMmodal" class="modal fade  GZImodal" data-backdrop="static" data-keyboard="false" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Jadransko More</h2>
+				</div>
+				<div class="modal-body text-center container-fluid">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Hvar</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/hvar.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Kotor</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/kotor.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Dubrovnik</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/dubrovnik.html'">Detaljnije</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--MODALI za destinacije-->
+
+	<div id="EPmodal" class="modal fade GZImodal" data-backdrop="static" data-keyboard="false" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Evropske prijestolnice</h2>
+				</div>
+				<div class="modal-body text-center container-fluid">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Beč</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/bec.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Pariz</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/pariz.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>London</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/london.html'">Detaljnije</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="ELmodal" class="modal fade GZImodal" data-backdrop="static" data-keyboard="false" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Egzotične lokacije</h2>
+				</div>
+				<div class="modal-body text-center container-fluid">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Maldivi</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/maldivi.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Ibiza</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/ibiza.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Fiji</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/fiji.html'">Detaljnije</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="NPmodal" class="modal fade GZImodal" data-backdrop="static" data-keyboard="false" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Netaknuta priroda</h2>
+				</div>
+				<div class="modal-body text-center container-fluid">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Amazon</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/amazon.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>NP Banff</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/banff.html'">Detaljnije</button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h2>Butan</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor eu, vehicula dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ornare, porttitor tortor.</p>
+						<button type="button" class="btn btn-primary" onclick="location.href ='gradovi/butan.html'">Detaljnije</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

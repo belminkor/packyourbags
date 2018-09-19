@@ -1,0 +1,498 @@
+body {
+	font-family: Lato, sans-serif;
+	min-width: 360px;
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: black;
+	background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+	border: none;
+}
+
+.navbar a {
+	color: white !important;
+}
+
+.navbar a:hover {
+	color: #f08d01 !important;
+}
+
+@media all and (max-width: 765px) {
+	.navbar {
+		background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,1));
+	}
+}
+
+#navigacija {
+	opacity: 0;
+}
+
+
+
+
+
+#jumbo {
+	top: 0;
+	background-image: url("slike/jumboPozadina.jpg");
+	background-size: cover;
+}
+
+#logo {
+	opacity: 0;
+	text-align: center;
+	margin: 20% auto;
+	color: rgba(255, 255, 255, 0.9); 
+	font-family: Leckerli One;
+}
+
+#logo img {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo h1 {
+	width: 100%;
+	margin-top: -20px;
+	font-size: 70px;
+}
+
+#logo h2 {
+	font-size: 35px;
+}
+
+@media all and (max-width: 520px) {
+    #logo h1 {
+    	margin-top: -15px;
+        font-size: 50px; 
+        }
+    #logo img {
+    	height: 75px;
+    }
+    #logo h2 {
+		font-size: 25px;
+	}
+}
+
+@media all and (max-width: 400px) {
+    #logo h1 {
+    	margin-top: -10px;
+        font-size: 40px;
+        }
+    #logo img {
+    	height: 65px;
+    }
+    #logo h2 {
+		font-size: 20px;
+	}
+}
+
+
+
+
+
+#ZastoPYB {
+	/*background-color: #79a779; */
+
+	background-color: #fff;
+}
+
+#ZastoPYB h2 {
+	text-align: center;
+	margin: 30px 0 40px 0;
+}
+
+.ZastoPYBIkonica {
+	opacity: 0;
+	margin: 30px 0;
+}
+
+.ZastoPYBIkonica  h3{
+	font-size: 25px;
+}
+
+.ZastoPYBIkonica  p{
+	font-size: 15px;
+}
+
+#gly1 {
+	color: #ff9805;
+	font-size: 3em;
+}
+
+
+
+
+
+#linija {
+	width: 25%;
+	border: 1px solid rgba(255,255,255,0.9);;
+}
+
+.col-md-12 {
+	color: rgba(255,255,255,0.9);
+
+}
+
+#ikonice {
+	background-image: url("slike/gdjeZeliteIciPozadina.jpg");
+	background-size: cover;
+	padding: 0;
+}
+
+.gdjeZeliteIciIkonica {
+	opacity: 0;
+}
+
+.col-md-3 {
+	padding: 10px 0;
+	color: rgba(255,255,255,0.9);
+}
+
+.col-md-3 img {
+	height: 200px;
+	width: auto;
+	min-width: 200px;
+	min-height: 200px;
+}
+
+.col-md-3:hover {
+	color: white;
+}
+
+.podnaslov {
+	margin: 0 auto 20px auto;
+	display: block;
+	width: 70%;
+}
+
+
+
+
+
+
+#kartice  {
+	background-color: #f5f6f7;
+}
+
+.btn-primary {
+	background-color: #ff9805;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #f08d01;
+}
+
+.btn-primary:visited {
+	background-color: #f08d01;
+}
+
+.btn-primary:active {
+	background-color: #f08d01;
+}
+
+.kartica {
+	opacity: 0;
+	margin: 12%;
+	border: 2px solid #ff9805;
+	border-radius: 1%;
+	padding-bottom: 15px;
+	background-color: #ffe;
+
+}
+
+.karticaTekst {
+	margin: 20px 15px;
+	display: block;
+}
+
+.GZImodal {
+	background-color: rgba(240, 141, 1, 0.1);
+
+}
+
+.GZImodal h2 {
+	color: orange;
+}
+
+.GZImodal p {
+	font-size: 15px;
+}
+
+
+.pitanje {
+	margin: 10px 0;
+}
+
+
+
+#footer {
+	background-color: #f08d01;
+}
+
+.smIkonice {
+	width: 305px;
+	text-align: center;
+	color: white;
+	display: block;
+	margin: 0 auto;
+}
+
+.smIkonice img {
+	width: 64px;
+	height: 64px;
+	margin: 10px 5px;
+}
+
+
+
+
+
+
+#sveDestinacije {
+	background-color: #FAEBCA;
+}
+
+#sveDestinacije h1 {
+	color: black;
+}
+
+.red-destinacija {
+	margin: 20px 0;
+}
+
+.slikaDestinacija {
+	margin: 20px 0;
+}
+.slikaDestinacija img {
+	border: 2px solid #ff9805;
+	border-radius: 5%;
+}
+
+.zadnjaStrana {
+	opacity: 0;
+	position: absolute;
+	top: 10%;
+	height: 70%;
+	left: 10%;
+	width: 80%;
+}
+
+.zadnjaStrana a {
+	color: #ff9805;
+	text-decoration: none;
+}
+
+.zadnjaStrana a:hover {
+	
+}
+
+#naslovKontakt {
+	text-align: center;
+}
+
+#kontakti {
+	font-size: 1.7em;
+}
+
+.jumbotron {
+	background-color: #f08d01;
+	color: #fff;
+}
+
+#btnSubmit {
+	background-color: #f08d01;
+}
+
+#btnSubmit:hover {
+	background-color: #fff;
+	cursor: pointer;
+	color: #f08d01;
+	border: 1px solid #f08d01;
+}
+
+
+
+
+
+.pitanja {
+	font-size: 1.2em;
+	padding: 20px;
+	padding-bottom: 50px;
+	border-radius: 25px; 
+	background-color: rgba(255,255,255, 0.6);
+	margin-bottom: 50px;
+}
+
+#p2 {
+	display: inline-block;
+	float: left;
+}
+
+.inputPolje{
+	background-color: rgba(255,255,255, 0.5);
+}
+
+#pozadinaAnketa {
+	background-image: url("slike/jumboPozadina.jpg");
+}
+
+#pozadinaAnketa h2 {
+	margin-top: 40px;
+}
+
+#pozadinaAnketa h2, h4 {
+	color: #fff;
+}
+
+
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
+
+
+
+
+
+
+
+#javna-statistika {
+	margin-bottom: 30px;
+}
+
+#privatna-statistika {
+	display: none;
+}
+
+
+#dugmeObrisi {
+	display: block;
+	width: 100px;
+	height: 50px;
+	color: white;
+	margin: 20px auto;
+	background-color: orange;
+	border-radius: 10%;
+}
+
+#blabla {
+	display: block;
+}
+
+.modal-body {
+	font-size: 20px;
+}
+
+
+
+
+#map {
+	height: 400px;
+}
+
+#tekstGrad {
+	font-size: 1.2em;
+}
+
+#citat {
+	background-color: #ff9805;
+	font-family: Lato, sans-serif;
+	color: #fff;
+	text-align: center;
+	padding: 50px;
+}
+
+#naslovDestinacije {
+	background-color: #fff;
+	color: black; 
+	/*border: 1px solid #ff9805;*/
+	font-family: Leckerli One;
+	opacity: 0;
+}
+
+#srednjaSlika {
+	opacity: 0;
+}
+
+#staPosjetiti h2 {
+	font-size: 2.5em;
+	padding: 20px;
+}
+
+#staPosjetiti p {
+	font-size: 1.7em;
+	padding: 10px;
+}
+
+.hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #f08d01;
+    margin: 1em 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.slika {
+  border: none;
+  margin: 0 auto;
+}
+.slika:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: all 0.1s;
+  -webkit-transition: all 0.9s;
+  z-index: 9999999;
+}
+
+
+
+
+#partner {
+	background-color: red;
+	height: 300px;
+	width: 100%;
+	background-image: url("slike/tangens.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+}
+
+#partner h1 {
+	font-size: 50px;
+}
+
+#partner h2 {
+	font-size: 25px;
+}
+
+#dioPartneri a:hover {
+	opacity: 0.7; 
+}
+

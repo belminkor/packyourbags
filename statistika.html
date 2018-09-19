@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PYB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Leckerli+One">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- HEADER -->
+	<nav class="navbar transparent navbar-inverse navbar-static-top">
+		<div class="container-fluid">
+	    	<div class="navbar-header">
+	    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>                        
+	      		</button>
+	    	</div>
+	    	<div class="collapse navbar-collapse" id="myNavbar">
+	     		<ul class="nav navbar-nav navbar-right">
+	    	     	<li><a href="index.html">POČETNA</a></li>
+		    	    <li><a href="destinacije.html">DESTINACIJE</a></li>
+		    	    <li><a href="anketa.html">ANKETA</a></li>
+		    	    <li><a href="kontakt.html">KONTAKT</a></li>
+	    		</ul>
+	    	</div>
+	  	</div>
+	</nav>
+
+	<br><br><br>
+	<div class="container-fluid text-center" id="javna-statistika">
+		<h1>Brojač posjeta</h1>
+		<br/>
+		<script type="text/javascript" src="http://counter3.01counter.com/private/counter.js?c=8734aa2c34f96a43b1b5a4cd0ff018b2"></script>
+		<noscript><a href="http://www.freecounterstat.com" title="website counter"><img src="http://counter3.01counter.com/private/freecounterstat.php?c=8734aa2c34f96a43b1b5a4cd0ff018b2" border="0" title="website counter" alt="website counter"></a>
+		</noscript>
+       
+
+		<h1 id="prijavaNaslov">Prijavite se da bi vidjeli tabelu</h1>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login" onclick="">Prijava</button>
+
+
+	</div>
+
+	<div class="container-fluid text-center" id="privatna-statistika">
+		<h1>Tabela</h1>
+			<div class="table-responsive">          
+				<table class="table" id="tabela">
+					<thead>
+						<tr>
+							<th>
+								<input name="select_all" id="oznSve" value="1" type="checkbox" onclick="oznaciSve()">
+							</th>
+							<th>
+								Ime
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(1)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(1)"></span>
+							</th>
+							<th>
+								Odrediste
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(2)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(2)"></span>
+							</th>
+							<th>
+								Predjena udaljenost
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(3)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(3)"></span>
+							</th>
+							<th>
+								Trajanje putovanja
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(4)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(4)"></span>
+							</th>
+							<th>
+								Ocjena
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(5)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(5)"></span>
+							</th>
+							<th>
+								Datum polaska
+								<span class="glyphicon glyphicon-triangle-bottom" onclick="sortirajOpadajuci(6)"></span>
+								<span class="glyphicon glyphicon-triangle-top" onclick="sortirajRastuci(6)"></span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			<button id="dugmeObrisi" onclick="obrisi()">
+				Obrisi selektovano
+			</button>
+		</div>
+	
+	<!--<button type="button" id="dugme" onclick="obrisi()">Obrisi selektovano</button>
+	-->
+	</div>
+	<script type="text/javascript" src="skripte/tabela.js"></script>
+	
+	<div class="container-fluid" id="footer" style="bottom: 0; position: absolute; width: 100%">
+		<div class="smIkonice">
+			<a href="https://www.instagram.com">
+				<img src="slike/instagramIkonica.png" id="i-ikonica" onmouseover="document.getElementById('i-ikonica').src='slike/instagramIkonicaHover.png';" onmouseleave="document.getElementById('i-ikonica').src='slike/instagramIkonica.png';">
+			</a>
+			<a href="https://www.outlook.com">
+				<img src="slike/eMailIkonica.png" id="e-ikonica" onmouseover="document.getElementById('e-ikonica').src='slike/eMailIkonicaHover.png';" onmouseleave="document.getElementById('e-ikonica').src='slike/eMailIkonica.png';">
+			</a>
+			<a href="https://www.twitter.com">
+				<img src="slike/twitterIkonica.png" id="t-ikonica" onmouseover="document.getElementById('t-ikonica').src='slike/twitterIkonicaHover.png';" onmouseleave="document.getElementById('t-ikonica').src='slike/twitterIkonica.png';">
+			</a>
+			<a href="https://www.facebook.com">
+				<img src="slike/facebookIkonica.png" id="f-ikonica" onmouseover="document.getElementById('f-ikonica').src='slike/facebookIkonicaHover.png';" onmouseleave="document.getElementById('f-ikonica').src='slike/facebookIkonica.png';">
+			</a>
+			<p>© Copyright 2016 PackYourBags</p>
+		</div>
+	</div>
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-88988921-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+	<div id="login" class="modal fade" data-backdrop="static" data-keyboard="false" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Prijava</h2>
+				</div>
+				<div class="modal-body text-center">
+					<form method="post" action='' name="login_form">
+						<div class="login-unos">
+							<span><div class="glyphicon glyphicon-user"></div></span>
+							<input type="text" class="form-control" id="user" placeholder="Korisničko ime">
+							<br />
+						</div>
+						<div class="login-unos">
+							<span><div class="glyphicon glyphicon-lock"></div></span>
+							<input type="password" class="form-control" name="pass" id="pass" placeholder="Šifra">
+						</div>
+						<br />
+						<button type="button" class="btn btn-primary" onclick="validiraj()">Sign in</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="skripte/loginModal.js"></script>
+</body>
+</html>
